@@ -23,13 +23,13 @@ function Layout() {
   return (
     <>
       <nav className="nav-bar">
-        <img className="logo" src="/smarthydro.png" alt="LOGO"></img>
+        <img className="logo" src="/images/smarthydro.png" alt="LOGO"></img>
         <ul className={`list-nav-bar ${showMenu == true ? 'active' : ''}`}>
-          <li className={`link-li ${activeLink === 'home' ? 'show' : ''}`} onClick={()=>handleLinkClick('home')}><Link to="/michaelWeb">Home</Link></li>
-          <li className={`link-li ${activeLink === 'about' ? 'show' : ''}`} onClick={()=>handleLinkClick('about')}><Link to="/about">About</Link></li>
-          <li className={`link-li ${activeLink === 'offers' ? 'show' : ''}`} onClick={()=>handleLinkClick('offers')}><Link to="/offers">Offers</Link></li>
-          <li className={`link-li ${activeLink === 'projects' ? 'show' : ''}`} onClick={()=>handleLinkClick('projects')}><Link to="/projects">Projects</Link></li>
-          <li className={`link-li ${activeLink === 'contact' ? 'show' : ''}`} onClick={()=>handleLinkClick('contact')}><Link to="/contact">Contact</Link></li>
+          <li className={`link-li ${activeLink === 'home' ? 'show' : ''}`} onClick={()=>handleLinkClick('home')}><Link to="/michaelWeb/">Home</Link></li>
+          <li className={`link-li ${activeLink === 'about' ? 'show' : ''}`} onClick={()=>handleLinkClick('about')}><Link to="/michaelWeb/about">About</Link></li>
+          <li className={`link-li ${activeLink === 'offers' ? 'show' : ''}`} onClick={()=>handleLinkClick('offers')}><Link to="/michaelWeb/offers">Offers</Link></li>
+          <li className={`link-li ${activeLink === 'projects' ? 'show' : ''}`} onClick={()=>handleLinkClick('projects')}><Link to="/michaelWeb/projects">Projects</Link></li>
+          <li className={`link-li ${activeLink === 'contact' ? 'show' : ''}`} onClick={()=>handleLinkClick('contact')}><Link to="/michaelWeb/contact">Contact</Link></li>
         </ul>
         <div className={`hamburger ${showMenu == true ? 'active' : ''}`} onClick={()=>handleHamburger(!showMenu)}>
           <span className='bar'></span>
@@ -41,11 +41,11 @@ function Layout() {
 
       </div>
       <Routes>
-        <Route path="/michaelWeb" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/offers" element={<Offers/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/michaelWeb/" element={<Home/>}/>
+        <Route path="/michaelWeb/about" element={<About/>}/>
+        <Route path="/michaelWeb/offers" element={<Offers/>}/>
+        <Route path="/michaelWeb/projects" element={<Projects/>}/>
+        <Route path="/michaelWeb/contact" element={<Contact/>}/>
       </Routes>
     </>
   )
