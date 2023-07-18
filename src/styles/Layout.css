@@ -84,16 +84,16 @@ li:hover {
   }
   .list-nav-bar{
     position: fixed;
-    opacity: 0;
+    left: -400%;
     flex-direction: column;
     top: 58px;
     background-color: var(--logo-color);
     width: 100%;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.4s;
   }
   .list-nav-bar.active{
-    opacity: 1;
+    left: 0;
   }
   li{
     border-left: none;
