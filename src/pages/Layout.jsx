@@ -23,9 +23,9 @@ function Layout() {
   return (
     <>
       <nav className="nav-bar">
-        <img className="logo" src="src\images\smarthydro.png" alt="LOGO"></img>
+        <img className="logo" src="/smarthydro.png" alt="LOGO"></img>
         <ul className={`list-nav-bar ${showMenu == true ? 'active' : ''}`}>
-          <li className={`link-li ${activeLink === 'home' ? 'show' : ''}`} onClick={()=>handleLinkClick('home')}><Link to="/">Home</Link></li>
+          <li className={`link-li ${activeLink === 'home' ? 'show' : ''}`} onClick={()=>handleLinkClick('home')}><Link to="/michaelWeb">Home</Link></li>
           <li className={`link-li ${activeLink === 'about' ? 'show' : ''}`} onClick={()=>handleLinkClick('about')}><Link to="/about">About</Link></li>
           <li className={`link-li ${activeLink === 'offers' ? 'show' : ''}`} onClick={()=>handleLinkClick('offers')}><Link to="/offers">Offers</Link></li>
           <li className={`link-li ${activeLink === 'projects' ? 'show' : ''}`} onClick={()=>handleLinkClick('projects')}><Link to="/projects">Projects</Link></li>
@@ -41,7 +41,7 @@ function Layout() {
 
       </div>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/michaelWeb" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/offers" element={<Offers/>}/>
         <Route path="/projects" element={<Projects/>}/>
