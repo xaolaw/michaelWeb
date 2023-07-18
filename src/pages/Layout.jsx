@@ -18,12 +18,12 @@ function Layout() {
     }
   };
   const handleHamburger = (show) =>{
-    setShowMenu(show);
+    setShowMenu(show);  
   }
   return (
     <>
       <nav className="nav-bar">
-        <img className="logo" src="/images/smarthydro.png" alt="LOGO"></img>
+        <img className="logo" src='/images/smarthydro.png' alt="LOGO"></img>
         <ul className={`list-nav-bar ${showMenu == true ? 'active' : ''}`}>
           <li className={`link-li ${activeLink === 'home' ? 'show' : ''}`} onClick={()=>handleLinkClick('home')}><Link to="/michaelWeb/">Home</Link></li>
           <li className={`link-li ${activeLink === 'about' ? 'show' : ''}`} onClick={()=>handleLinkClick('about')}><Link to="/michaelWeb/about">About</Link></li>
