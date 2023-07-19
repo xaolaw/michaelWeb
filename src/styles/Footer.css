@@ -1,0 +1,12 @@
+.links{
+    background-color: rgba(0, 0, 0, 0.819);
+}
+svg{
+    font-size: 2vw;
+}
+.facebook > svg{
+    color: #4267B2;
+}
+.linkedin > svg{
+    color: #0a66c2;
+}
