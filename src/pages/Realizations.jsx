@@ -1,8 +1,5 @@
-
 function Realizations() {
-  return (
-    <div>Realizations</div>
-  )
+  return <div>Realizations</div>;
 }
 
-export default Realizations
+export default Realizations;

@@ -78,11 +78,8 @@ function Layout() {
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-        
       </nav>
-      <div className='content'>
-
-      </div>
+      <div className="content"></div>
 
       <Routes>
         <Route path="/michaelWeb/" element={<Home />} />

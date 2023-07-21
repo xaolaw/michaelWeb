@@ -1,6 +1,6 @@
 h1 {
   color: white;
-  text-transform:capitalize;
+  text-transform: capitalize;
   font-size: var(--big-font);
   text-shadow: 2px 2px 5px black;
 }
@@ -10,9 +10,9 @@ h1 {
   transform: translateX(0);
   display: block;
   text-align: center;
-  font-family: "Arial Narrow", Arial, sans-serif;  
+  font-family: 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 @keyframes left-slide-in {
@@ -51,7 +51,7 @@ h1 {
   animation-name: bottom-slide-in;
   animation-duration: var(--default-animation-duration);
   font-weight: bold;
-  font-family: "Arial Narrow", Arial, sans-serif;  
+  font-family: 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
 }
 .learn-more:hover {
@@ -78,48 +78,103 @@ h1 {
   animation: slide 25s infinite;
 }
 @keyframes slide {
-  0%,15%,100%{
+  0%,
+  15%,
+  100% {
     transform: translateX(0);
     animation-timing-function: ease-in;
   }
-  20%{
+  20% {
     transform: translateX(-100%);
     animation-timing-function: step-end;
   }
-  95%{
+  95% {
     transform: translateX(100%);
     animation-timing-function: ease;
   }
 }
 .slider .slide:nth-child(1) {
-  background-image: url("/sliderImages/slider1.jpg");
+  background-image: url('/sliderImages/slider1.jpg');
   animation-delay: 0;
 }
 
 .slider .slide:nth-child(2) {
-  background-image: url("/sliderImages/slider2.jpg");
+  background-image: url('/sliderImages/slider2.jpg');
   animation-delay: -5s;
 }
 
 .slider .slide:nth-child(3) {
-  background-image: url("/sliderImages/slider3.jpg");
+  background-image: url('/sliderImages/slider3.jpg');
   animation-delay: -10s;
 }
 
 .slider .slide:nth-child(4) {
-  background-image: url("/sliderImages/slider4.jpg");
+  background-image: url('/sliderImages/slider4.jpg');
   animation-delay: -15s;
 }
 
 .slider .slide:nth-child(5) {
-  background-image: url("/sliderImages/Slider5.jpg");
+  background-image: url('/sliderImages/Slider5.jpg');
   animation-delay: -20s;
 }
+/*
+beneath the first screen
+*/
+.core-values {
+  text-align: center;
+}
+.who-are-we {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    right,
+    var(--logo-color),
+    rgb(116, 205, 131)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-us {
+  font-family: 'Architects Daughter';
+  font-size: 20px;
+}
+.text-about {
+  min-width: 200px;
+  max-width: 1200px;
+  margin: auto;
+}
+.cointaner-cards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  gap: 35px;
+  margin: 50px auto 100px;
+  max-width: 1500px;
+}
+.card {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-image {
+  min-height: 300px;
+}
+.card-content {
+  text-align: center;
+  height: 270px;
+}
+
 @media screen and (max-width: 768px) {
-  h1{ 
+  h1 {
     font-size: 40px;
   }
-  .learn-more{
+  .learn-more {
     margin-top: 40vh !important;
     padding: 15px !important;
   }

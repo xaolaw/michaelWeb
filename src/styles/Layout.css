@@ -36,9 +36,8 @@ li {
   cursor: pointer;
   height: var(--nav-bar-hegiht);
   text-align: center;
-  
 }
-li a {  
+li a {
   padding-top: 16px;
   text-decoration: none;
   font-size: 16px;
@@ -47,10 +46,10 @@ li a {
   height: 100%;
   width: 100%;
 }
-li:nth-child(5) > a{
+li:nth-child(5) > a {
   padding-top: 5px;
 }
-li:nth-child(6) > a{
+li:nth-child(6) > a {
   padding-top: 5px;
 }
 .link-li.show {
