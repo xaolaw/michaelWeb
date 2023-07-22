@@ -107,13 +107,16 @@ li:hover {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
+  nav{
+    width: 100%;
+  }
   .list-nav-bar {
     position: fixed;
     left: -400%;
     flex-direction: column;
     top: 58px;
-    background-color: var(--logo-color);
     width: 100%;
+    background-color: var(--logo-color);
     text-align: center;
     transition: 0.5s;
     min-width: 100px;
@@ -122,7 +125,6 @@ li:hover {
     left: 0;
   }
   ul {
-    display: none;
     min-width: 200px;
   }
   li {

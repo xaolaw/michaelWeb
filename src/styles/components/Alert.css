@@ -1,0 +1,47 @@
+.alert-container {
+    position: fixed;
+    top: 68px;
+    opacity: 1;
+    font-style: bold;
+    animation: slideDown 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;    
+    min-height: 80px;
+    min-width: 120px;
+    gap: 15px;
+    border-radius: 10px;
+}
+.success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 2px solid #0f5132;
+}
+.error{
+    background-color: #f8d7da;
+    color: #842029;
+    border: 2px solid #842029;
+}
+.alert-title{
+    font-weight: bold;
+}
+button{
+    min-width: 30px;
+    min-height: 30px;
+}
+.close-mark{
+    font-size: 30px;
+    cursor: pointer;
+}
+@keyframes slideDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

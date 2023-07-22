@@ -17,36 +17,39 @@ section {
   align-items: center;
   flex-direction: column;
 }
-#origin-text{
+#origin-text {
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   padding: 10px 0 10px 0;
 }
-.mission{
+.mission {
   background-color: #f8f8f8;
   padding-bottom: 30px;
 }
-.mission-content{
+.mission-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
   gap: 20px;
 }
-.img-mission{
+.img-mission {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
   height: auto;
   border-radius: 20%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.p-mission{
-  grid-area: mission-text;
+p{
   text-align: justify;
-  max-width: 1400px;
 }
-#mission-text{
+.p-mission {
+  max-width: 1000px;
+}
+#mission-text {
   margin: 0 20px 0 20px;
   width: 100%;
 }
@@ -89,7 +92,7 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 768px) {
-  .mission-content{
+  .mission-content {
     flex-direction: column;
   }
 }
