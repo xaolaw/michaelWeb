@@ -1,0 +1,95 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.origin {
+  background-image: url('../../public/images/krakow.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 94.6vh;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#origin-text{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+.mission{
+  background-color: #f8f8f8;
+  padding-bottom: 30px;
+}
+.mission-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.img-mission{
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.p-mission{
+  grid-area: mission-text;
+  text-align: justify;
+  max-width: 1400px;
+}
+#mission-text{
+  margin: 0 20px 0 20px;
+  width: 100%;
+}
+.team-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+.img-container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.img-boss {
+  min-width: 150px;
+  height: auto;
+  max-width: 300px;
+  border-radius: 15px;
+  border: 3px solid var(--logo-color);
+}
+.about-container {
+  padding: 20px 30px;
+  max-width: 700px;
+}
+h3 {
+  font-size: 30px;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(220, 60, 60),
+    rgb(110, 146, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .mission-content{
+    flex-direction: column;
+  }
+}

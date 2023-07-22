@@ -38,8 +38,7 @@ h1 {
 .learn-more {
   display: block;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 57vh;
+  margin: 0 0 50px 0;
   background-color: var(--logo-color);
   transform: translateY(0);
   padding: 30px;
@@ -60,12 +59,15 @@ h1 {
   border: 4px solid var(--logo-color);
   background-color: white;
 }
-
 .slider {
   overflow: hidden;
   width: 100%;
   height: 94.5vh;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .slider .slide {
   position: absolute;
@@ -123,18 +125,12 @@ beneath the first screen
 .core-values {
   text-align: center;
 }
+.what-you-doin {
+  scroll-margin-top: 58px;
+}
 .who-are-we {
-  font-size: 50px;
   text-transform: uppercase;
   font-weight: bold;
-  background: -webkit-linear-gradient(
-    right,
-    var(--logo-color),
-    rgb(116, 205, 131)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .about-us {
   font-family: 'Architects Daughter';
@@ -169,7 +165,51 @@ beneath the first screen
   text-align: center;
   height: 270px;
 }
-
+.offer {
+  background-image: url('../../public/images/riverTop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#core-values-more {
+  background-color: rgba(0, 0, 0, 0.66);
+  color: rgba(255, 255, 255, 0.845);
+  width: 100%;
+  padding-bottom: 20px;
+}
+h4 {
+  font-size: 25px;
+  margin: 5px 0 5px 0;
+}
+.realizations {
+  min-height: 800px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url('../../public/images/pexels-bridge.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bridge-image {
+  background-color: rgba(0, 0, 0, 0.66);
+  color: white;
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+#bridge-image > h2 {
+  margin-top: 0;
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -177,5 +217,12 @@ beneath the first screen
   .learn-more {
     margin-top: 40vh !important;
     padding: 15px !important;
+  }
+  .cointaner-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  p {
+    margin: auto 10px auto 10px;
   }
 }

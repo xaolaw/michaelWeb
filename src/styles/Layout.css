@@ -5,7 +5,7 @@ ul {
   align-items: center;
   margin: 0;
   padding: 0;
-  min-width: 800px;
+  min-width: 768px;
   align-items: stretch;
 }
 nav {
@@ -26,9 +26,23 @@ nav {
 .content {
   padding-top: var(--nav-bar-hegiht);
 }
-img {
+.logo {
   height: var(--nav-bar-hegiht);
   width: auto;
+  animation: rotating 30s infinite;
+  transition: 2s ease-in-out;
+  -webkit-transition: 2s;
+}
+@keyframes rotating {
+  0% {
+    transform: rotateY(0deg);
+  }
+  93% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 li {
   list-style-type: none;
@@ -81,7 +95,7 @@ li:hover {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 20px;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -106,6 +120,10 @@ li:hover {
   }
   .list-nav-bar.active {
     left: 0;
+  }
+  ul {
+    display: none;
+    min-width: 200px;
   }
   li {
     border-left: none;

@@ -15,6 +15,17 @@
   font-family: 'Architects Daughter';
   src: url('../fonts/architects_daughter.ttf') format('truetype');
 }
+h2 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(
+    right,
+    var(--logo-color),
+    rgb(116, 205, 131)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 body {
   margin: 0;
   padding: 0;

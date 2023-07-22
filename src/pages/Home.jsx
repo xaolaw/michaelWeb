@@ -12,7 +12,11 @@ function Home() {
     Aos.init({ duration: 2000 });
   }, []);
   const learnMore = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    ref.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
   };
 
   return (
@@ -36,7 +40,7 @@ function Home() {
           </div>
         </section>
         <section ref={ref} className="what-you-doin">
-          <div className="core-values">
+          <div className="core-values" id="cards-values">
             <h2 data-aos="zoom-in" data-aos-once="true" className="who-are-we">
               Kim jesteśmy?
             </h2>
@@ -58,7 +62,9 @@ function Home() {
             <div data-aos="flip-left" className="card" data-aos-once="true">
               <img className="card-image" src={safety}></img>
               <div className="card-content">
-                <h2>Bezpieczeństwo na pierwszym miejscu:</h2>
+                <h4 className="card-header">
+                  Bezpieczeństwo na pierwszym miejscu:
+                </h4>
                 <p>
                   Dzięki naszym starannym rozwiązaniom inżynierskim i
                   rygorystycznym testom, nasze projekty są odporne na
@@ -70,7 +76,9 @@ function Home() {
             <div data-aos="flip-left" className="card" data-aos-once="true">
               <img className="card-image" src={bulb}></img>
               <div className="card-content">
-                <h2>Zrównoważony rozwój i troska o środowisko:</h2>
+                <h4 className="card-header">
+                  Zrównoważony rozwój i troska o środowisko:
+                </h4>
                 <p>
                   Wierzymy w budowanie dla przyszłości. Nasze rozwiązania
                   opierają się na zasadach zrównoważonego rozwoju, minimalizując
@@ -81,7 +89,7 @@ function Home() {
             <div data-aos="flip-left" className="card" data-aos-once="true">
               <img className="card-image" src={excavator}></img>
               <div className="card-content">
-                <h2>Efektywność i innowacyjność:</h2>
+                <h4 className="card-header">Efektywność i innowacyjność:</h4>
                 <p>
                   Nasz zespół wykorzystuje najnowsze technologie i innowacyjne
                   podejścia, aby zapewnić efektywne i wydajne rozwiązania dla
@@ -91,8 +99,8 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="offer">
-          <div className="core-values">
+        <section className="offer" data-aos-once="true" data-aos="fade">
+          <div className="core-values" id="core-values-more">
             <h2 data-aos="zoom-in" data-aos-once="true" className="who-are-we">
               Oferta
             </h2>
@@ -111,8 +119,8 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="realizations">
-          <div className="core-values">
+        <section className="realizations" data-aos="fade" data-aos-once="true">
+          <div className="core-values" id="bridge-image">
             <h2 data-aos="zoom-in" data-aos-once="true" className="who-are-we">
               Realizacje
             </h2>
