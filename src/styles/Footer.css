@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 svg {
-  font-size: 40px;
+  font-size: 3rem;
 }
 .facebook,
 .linkedin {
@@ -26,6 +26,7 @@ svg {
   background-color: white;
   border: 1px solid white;
   border-radius: 200px;
+  z-index: 1000;
 }
 .linkedin {
   bottom: 70px !important;
@@ -46,5 +47,33 @@ svg {
   display: flex;
   flex-direction: column;
 }
+/*fa icon animations*/
+@keyframes beatAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.fa-icon:hover{
+  animation: beatAnimation 0.7s infinite;
+}
+.span-box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 300px;
+  flex-grow: 1;
+  padding: 5px;
+}
+span > svg{
+  max-height: 24px;
+  margin-right: 10px;
+}
 @media screen and (max-width: 768px) {
+  .facebook,
+.linkedin{
+  display: none;
+}
 }

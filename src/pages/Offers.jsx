@@ -1,5 +1,11 @@
+import MapComponent from "../Components/MapComponent";
+
 function Offers() {
-  return <div>Offers</div>;
+  return (
+    <>
+      <MapComponent></MapComponent>
+    </>
+  );
 }
 
 export default Offers;
