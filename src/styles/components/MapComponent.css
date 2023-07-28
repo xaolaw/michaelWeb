@@ -1,0 +1,15 @@
+.map-container{
+    min-height: 600px;
+    width: calc(100% - 9px);
+    border: 5px solid var(--logo-color);
+}
+.popup-text{
+    color: var(--logo-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+    .map-container{
+        min-height: 400px;
+    }
+}

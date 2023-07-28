@@ -1,10 +1,10 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useRef } from 'react';
-import bulb from '../../public/cards-images/bulb.png';
-import excavator from '../../public/cards-images/excavator.png';
-import safety from '../../public/cards-images/safwty.png';
 import '../styles/Home.css';
+import bulb from '/cards-images/bulb.png';
+import excavator from '/cards-images/excavator.png';
+import safety from '/cards-images/safwty.png?url';
 
 function Home() {
   const ref = useRef(null);
@@ -45,7 +45,7 @@ function Home() {
               Kim jesteśmy?
             </h2>
             <div className="text-about">
-              <p data-aos-once="true" data-aos="fade-left" className="about-us">
+              <p data-aos-once="true" data-aos="fade-right" className="about-us">
                 Jesteśmy grupą specjalistów z kierunkowym wykształceniem oraz
                 doświadczeniem w dziedzinach budownictwa lądowego i wodnego,
                 współpracującą pod szyldem{' '}
@@ -105,7 +105,7 @@ function Home() {
               Oferta
             </h2>
             <div className="text-about">
-              <p data-aos-once="true" data-aos="fade-left" className="about-us">
+              <p data-aos-once="true" data-aos="fade-right" className="about-us">
                 Choć nasza oferta jest szeroka, zdajemy sobie sprawę, że każde
                 zlecenie budowlane może być unikalne i wymagać niestandardowego
                 podejścia. Dlatego, jeżeli masz zlecenie z dziedzin budownictwa
@@ -125,7 +125,7 @@ function Home() {
               Realizacje
             </h2>
             <div className="text-about">
-              <p data-aos-once="true" data-aos="fade-left" className="about-us">
+              <p data-aos-once="true" data-aos="fade-right" className="about-us">
                 Nasze doświadczenie jest budowane przede wszystkim na praktyce,
                 którą zdobywamy przy konkretnych projektach. Jesteśmy otwarci na
                 wszelkie nowe ścieżki rozwoju, co sprawia że ciągle poszerzamy

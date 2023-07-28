@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CustomAlert from '../Components/CustomAlert';
-import '../styles/Contact.css';
+import MapComponent from '../Components/MapComponent';
+import '../styles/Contact2.css';
 
 function Contact() {
   //mail validation variables
@@ -11,7 +12,6 @@ function Contact() {
 
   //alert variables
   const [alert,setAlert] = useState(null);
-
   function createNewAlert(type,title,msg){
     return { 
       type: type, 
@@ -52,8 +52,16 @@ function Contact() {
   return (
     <>
       <section className="send-mail">
-        <h2>Skontaktuj się z nami poprzez e-mail</h2>
+        <div className='background-image'/>
+        <div className='contact-header'>
+          <h2>Kontakt</h2>
+          <p>Chcesz dowiedzieć się więcej?
+            
+          </p>
+          <p>Zapraszamy do kontaktu poprzez formularz!</p>
+        </div>
         <form className="mail-sender" onSubmit={sendMail}>
+          <h2>Formularz kontaktowy</h2>
           <div className="form-div">
             <label>Twój mail:</label>
             <input
@@ -61,6 +69,7 @@ function Contact() {
               onChange={(event) => {
                 setMail(event.target.value);
               }}
+              placeholder="Podaj swój adres email"
             ></input>
           </div>
           <div className="form-div">
@@ -70,6 +79,7 @@ function Contact() {
               onChange={(event) => {
                 setTopic(event.target.value);
               }}
+              placeholder="Podaj temat wiadomości"
             ></input>
           </div>
           <div className="form-div">
@@ -78,6 +88,7 @@ function Contact() {
               onChange={(event) => {
                 setContent(event.target.value);
               }}
+              placeholder="Podaj treść swojej wiadomości"
             ></textarea>
           </div>
           <div className="form-div">
@@ -89,6 +100,10 @@ function Contact() {
             <CustomAlert className="CustomAlert" type={alert.type} title={alert.title} msg={alert.msg} onClose={() => setAlert(null)}></CustomAlert>
           )
         }
+      </section>
+      <section className='map-section'>
+        <h2>Znajdź nas w Krakowie!</h2>
+        <MapComponent className='map-component'></MapComponent>
       </section>
     </>
   );

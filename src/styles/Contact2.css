@@ -1,0 +1,98 @@
+:root{
+  --section-height: 80vh;
+}
+
+.form-container, .mail-sender, .form-div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mail-sender{
+  gap: 1vh;
+  width: 100%;
+}
+label{
+  font-size: 1.6rem
+}
+.contact-header{
+  position: absolute;
+  top: 20vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.4); 
+  align-items: center;
+} 
+.mail-sender{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: black;
+  height: auto;
+  justify-content: center;
+  width: 80%;
+}
+.form-div{
+  width: 60%;
+}
+.background-image{
+  background-image: url('../../public/images/geometry.jpg');
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 60vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+}
+textarea {
+  min-height: 8rem;
+  max-height: 30rem;
+  resize: vertical;
+}
+input[type='submit']{
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: var(--logo-color);
+  border: 0.3rem solid white;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  font-weight: bold;
+}
+input[type='submit']:hover{
+  background-color: white;
+  border: 0.3rem solid var(--logo-color);
+  color: var(--logo-color);
+}
+.map-section{
+  min-width: 30rem;
+  background-color: #f8f8f8;
+}
+@media screen and (max-width: 768px) {
+  input[type='text'],
+textarea {
+  width: 60vw;
+}
+.background-image{
+  height: 100vh;
+}
+.form-container{
+  width: 80vw;
+}
+.map-section{
+  margin: auto;
+  width: 40%;
+}
+}

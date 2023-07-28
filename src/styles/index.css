@@ -1,3 +1,6 @@
+html{
+  font-size: 62.5%;
+}
 :root {
   --first-color: #42c2ff;
   --second-color: #85f4ff;
@@ -15,8 +18,14 @@
   font-family: 'Architects Daughter';
   src: url('../fonts/architects_daughter.ttf') format('truetype');
 }
+p{
+  font-size: 1.6rem;
+}
+h1{
+  font-size: 6rem;
+}
 h2 {
-  font-size: 50px;
+  font-size: 4rem;
   background: -webkit-linear-gradient(
     right,
     var(--logo-color),
@@ -26,6 +35,9 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+h3{
+  font-size: 2.4rem !important;
+}
 body {
   margin: 0;
   padding: 0;
@@ -33,4 +45,12 @@ body {
 img {
   height: 9vh;
   width: auto;
+}
+@media screen and (max-width: 768px) {
+body{
+  font-size: 16px;
+}
+h2{
+  font-size: 24px;
+}
 }

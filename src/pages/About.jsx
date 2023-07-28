@@ -1,11 +1,11 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import grandM from '../../public/images/babcia.jpg';
-import grandF from '../../public/images/dziadek.jpg';
-import mission from '../../public/images/mission.jpg';
-import boss from '../../public/images/szefu.jpg';
 import '../styles/About.css';
+import grandM from '/images/babcia.jpg';
+import grandF from '/images/dziadek.jpg';
+import mission from '/images/mission.jpg';
+import boss from '/images/szefu.jpg?url';
 
 function About() {
   useEffect(() => {
@@ -28,7 +28,7 @@ function About() {
       </section>
       <section
         className="mission"
-        data-aos="fade-down-right"
+        data-aos="fade"
         data-aos-once="true"
       >
         <div className="text">

@@ -1,4 +1,4 @@
-ul {
+.list-nav-bar {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 5000;
   background-color: white;
   display: flex;
   align-items: center;
@@ -44,26 +44,26 @@ nav {
     transform: rotateY(360deg);
   }
 }
-li {
+.link-li {
   list-style-type: none;
   flex: 1;
   cursor: pointer;
   height: var(--nav-bar-hegiht);
   text-align: center;
 }
-li a {
+.link-li a {
   padding-top: 16px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: black;
   display: block;
   height: 100%;
   width: 100%;
 }
-li:nth-child(5) > a {
+.link-li:nth-child(5) > a {
   padding-top: 5px;
 }
-li:nth-child(6) > a {
+.link-li:nth-child(6) > a {
   padding-top: 5px;
 }
 .link-li.show {
@@ -72,10 +72,10 @@ li:nth-child(6) > a {
 .link-li.show > a {
   color: white;
 }
-li:hover > a {
+.link-li:hover > a {
   color: white;
 }
-li:hover {
+.link-li:hover {
   background-color: var(--logo-color);
   transition: ease-in-out 0.4s;
 }
@@ -124,17 +124,17 @@ li:hover {
   .list-nav-bar.active {
     left: 0;
   }
-  ul {
+.list-nav-bar  {
     min-width: 200px;
   }
-  li {
+  .link-li {
     border-left: none;
     width: 100%;
   }
-  li > a {
+  .link-li > a {
     color: white;
   }
-  li:hover > a {
+  .link-li:hover > a {
     color: wheat;
   }
   .link-li.show > a {

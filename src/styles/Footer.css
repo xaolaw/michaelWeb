@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 svg {
-  font-size: 40px;
+  font-size: 3rem;
 }
 .facebook,
 .linkedin {
@@ -26,6 +26,7 @@ svg {
   background-color: white;
   border: 1px solid white;
   border-radius: 200px;
+  z-index: 1000;
 }
 .linkedin {
   bottom: 70px !important;
