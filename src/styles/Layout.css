@@ -107,7 +107,7 @@ nav {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
-  nav{
+  nav {
     width: 100%;
   }
   .list-nav-bar {
@@ -124,7 +124,7 @@ nav {
   .list-nav-bar.active {
     left: 0;
   }
-.list-nav-bar  {
+  .list-nav-bar {
     min-width: 200px;
   }
   .link-li {

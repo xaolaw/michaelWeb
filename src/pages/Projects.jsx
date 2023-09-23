@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 function Projects() {
   const [page, setPage] = useState(null);
@@ -15,15 +15,15 @@ function Projects() {
       description
     }
   }
-}`
+}`;
   useEffect(() => {
     window
       .fetch(`https://graphql.contentful.com/content/v1/spaces/xbarv21go206/`, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
           // Authenticate the request
-          Authorization: "Bearer D8MNKk0S2_S_vrTXVLmuSpdUu2VpL6tjLgPUD8b2FRE",
+          Authorization: 'Bearer D8MNKk0S2_S_vrTXVLmuSpdUu2VpL6tjLgPUD8b2FRE',
         },
         // send the GraphQL query
         body: JSON.stringify({ query }),
@@ -38,14 +38,14 @@ function Projects() {
         setPage(data.pageCollection.items[0]);
       });
   }, []);
-  return(
+  return (
     <>
-    <div className="App">
-      <header className="App-header">
-        <img src={page.image.url} className="App-logo" alt="logo" />
-        <p>{page.name}</p>
-      </header>
-    </div>
+      <div className="App">
+        <header className="App-header">
+          <img src={page.image.url} className="App-logo" alt="logo" />
+          <p>{page.name}</p>
+        </header>
+      </div>
     </>
   );
 }

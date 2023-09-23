@@ -8,9 +8,11 @@ import safety from '/cards-images/safwty.png?url';
 
 function Home() {
   const ref = useRef(null);
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   const learnMore = () => {
     ref.current?.scrollIntoView({
       behavior: 'smooth',
@@ -45,7 +47,11 @@ function Home() {
               Kim jesteśmy?
             </h2>
             <div className="text-about">
-              <p data-aos-once="true" data-aos="fade-right" className="about-us">
+              <p
+                data-aos-once="true"
+                data-aos="fade-right"
+                className="about-us"
+              >
                 Jesteśmy grupą specjalistów z kierunkowym wykształceniem oraz
                 doświadczeniem w dziedzinach budownictwa lądowego i wodnego,
                 współpracującą pod szyldem{' '}
@@ -105,7 +111,11 @@ function Home() {
               Oferta
             </h2>
             <div className="text-about">
-              <p data-aos-once="true" data-aos="fade-right" className="about-us">
+              <p
+                data-aos-once="true"
+                data-aos="fade-right"
+                className="about-us"
+              >
                 Choć nasza oferta jest szeroka, zdajemy sobie sprawę, że każde
                 zlecenie budowlane może być unikalne i wymagać niestandardowego
                 podejścia. Dlatego, jeżeli masz zlecenie z dziedzin budownictwa
@@ -125,7 +135,11 @@ function Home() {
               Realizacje
             </h2>
             <div className="text-about">
-              <p data-aos-once="true" data-aos="fade-right" className="about-us">
+              <p
+                data-aos-once="true"
+                data-aos="fade-right"
+                className="about-us"
+              >
                 Nasze doświadczenie jest budowane przede wszystkim na praktyce,
                 którą zdobywamy przy konkretnych projektach. Jesteśmy otwarci na
                 wszelkie nowe ścieżki rozwoju, co sprawia że ciągle poszerzamy

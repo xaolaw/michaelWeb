@@ -49,17 +49,18 @@ svg {
 }
 /*fa icon animations*/
 @keyframes beatAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
     transform: scale(1.1);
   }
 }
-.fa-icon:hover{
+.fa-icon:hover {
   animation: beatAnimation 0.7s infinite;
 }
-.span-box{
+.span-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -67,13 +68,13 @@ svg {
   flex-grow: 1;
   padding: 5px;
 }
-span > svg{
+span > svg {
   max-height: 24px;
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
   .facebook,
-.linkedin{
-  display: none;
-}
+  .linkedin {
+    display: none;
+  }
 }
