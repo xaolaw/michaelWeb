@@ -26,11 +26,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section
-        className="mission"
-        data-aos="fade"
-        data-aos-once="true"
-      >
+      <section className="mission" data-aos="fade" data-aos-once="true">
         <div className="text">
           <h2>Nasza misja</h2>
           <div className="mission-content" id="mission-text">

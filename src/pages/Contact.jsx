@@ -11,12 +11,12 @@ function Contact() {
   const validMail = new RegExp('^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$');
 
   //alert variables
-  const [alert,setAlert] = useState(null);
-  function createNewAlert(type,title,msg){
-    return { 
-      type: type, 
-      title: title, 
-      msg: msg 
+  const [alert, setAlert] = useState(null);
+  function createNewAlert(type, title, msg) {
+    return {
+      type: type,
+      title: title,
+      msg: msg,
     };
   }
   const sendMail = (event) => {
@@ -24,23 +24,26 @@ function Contact() {
     event.preventDefault();
     switch (checkValues()) {
       case 'OK':
-        setAlert(createNewAlert('success','Sukces!','Pomyślnie przesłano maila'));
+        setAlert(
+          createNewAlert('success', 'Sukces!', 'Pomyślnie przesłano maila')
+        );
         break;
       case 'Validation':
-        setAlert(createNewAlert('error','Błąd!','Podałeś nieporawny adres e-mail'));
+        setAlert(
+          createNewAlert('error', 'Błąd!', 'Podałeś nieporawny adres e-mail')
+        );
         break;
       case 'NotAllSubmited':
-        setAlert(createNewAlert('error','Błąd!','Nie uzupełniłeś wszytskich pól'));
+        setAlert(
+          createNewAlert('error', 'Błąd!', 'Nie uzupełniłeś wszytskich pól')
+        );
         break;
       default:
         setAlert(null);
     }
-    
   };
-  function highLightInput(){
-    
-  }
-  function checkValues(){
+  function highLightInput() {}
+  function checkValues() {
     if (mail === '' || topic === '' || content === '') {
       return 'NotAllSubmited';
     }
@@ -52,12 +55,10 @@ function Contact() {
   return (
     <>
       <section className="send-mail">
-        <div className='background-image'/>
-        <div className='contact-header'>
+        <div className="background-image" />
+        <div className="contact-header">
           <h2>Kontakt</h2>
-          <p>Chcesz dowiedzieć się więcej?
-            
-          </p>
+          <p>Chcesz dowiedzieć się więcej?</p>
           <p>Zapraszamy do kontaktu poprzez formularz!</p>
         </div>
         <form className="mail-sender" onSubmit={sendMail}>
@@ -95,15 +96,19 @@ function Contact() {
             <input type="submit" value="Wyślij!"></input>
           </div>
         </form>
-        {
-          alert && (
-            <CustomAlert className="CustomAlert" type={alert.type} title={alert.title} msg={alert.msg} onClose={() => setAlert(null)}></CustomAlert>
-          )
-        }
+        {alert && (
+          <CustomAlert
+            className="CustomAlert"
+            type={alert.type}
+            title={alert.title}
+            msg={alert.msg}
+            onClose={() => setAlert(null)}
+          ></CustomAlert>
+        )}
       </section>
-      <section className='map-section'>
+      <section className="map-section">
         <h2>Znajdź nas w Krakowie!</h2>
-        <MapComponent className='map-component'></MapComponent>
+        <MapComponent className="map-component"></MapComponent>
       </section>
     </>
   );

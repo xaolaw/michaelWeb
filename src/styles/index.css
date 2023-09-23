@@ -1,4 +1,4 @@
-html{
+html {
   font-size: 62.5%;
 }
 :root {
@@ -18,10 +18,10 @@ html{
   font-family: 'Architects Daughter';
   src: url('../fonts/architects_daughter.ttf') format('truetype');
 }
-p{
+p {
   font-size: 1.6rem;
 }
-h1{
+h1 {
   font-size: 6rem;
 }
 h2 {
@@ -35,7 +35,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h3{
+h3 {
   font-size: 2.4rem !important;
 }
 body {
@@ -47,10 +47,10 @@ img {
   width: auto;
 }
 @media screen and (max-width: 768px) {
-body{
-  font-size: 16px;
-}
-h2{
-  font-size: 24px;
-}
+  body {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
 }
